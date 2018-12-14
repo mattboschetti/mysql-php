@@ -18,5 +18,8 @@ MySql 5.7 and php7.2 docker image
 - php7.2-curl
 - php7.2-soap
 
+**Build**
+
+`./run.sh <version.number>`
 
 Happy hacking!
