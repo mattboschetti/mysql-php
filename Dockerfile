@@ -14,11 +14,12 @@ RUN apt-get update && apt-get install -y wget ca-certificates apt-transport-http
 RUN wget -q https://packages.sury.org/php/apt.gpg -O- | apt-key add - \
     && echo "deb https://packages.sury.org/php/ stretch main" | tee /etc/apt/sources.list.d/php.list
 
-RUN apt-get update && apt-get install -y \
+RUN apt-get update && apt-get install -y --allow-unauthenticated \
     tar \
     zip \
     curl \
     wget \
+    git \
     php7.2-cli \
     php7.2-mysql \
     php7.2-xml \
